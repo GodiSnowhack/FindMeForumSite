@@ -1,0 +1,642 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #eee;
+    padding: 1em;
+    border: 1px solid #ddd; /* Добавлен рамка вокруг навигации */
+    border-radius: 10px; /* Закругление углов */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    border: 1px solid #ccc; /* Добавлен рамка вокруг каждого элемента списка */
+    border-radius: 5px; /* Закругление углов элемента списка */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+
+.MainMenuSection{
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.missing-profile-section {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.login-link a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.SelectBirthdate {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+.RegisterForm {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.missing-profile-block {
+    background-color: #ff9999;
+    padding: 1em;
+    text-align: center;
+    margin: 2em auto;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.missing-profile-block a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+form {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.register-link {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.register-link a {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+.chat-list{
+    flex:1;
+    background-color:#ddd;
+    padding:20px;
+    border-right:1px solid #999;
+    overflow-y:auto
+}
+.chat-area{
+    flex:3;
+    padding:20px
+}
+.chat-item{
+    cursor:pointer;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:5px;
+    background-color:#fff
+}
+.chat-item:hover{
+    background-color:#eee
+}
+.selected-chat{
+    background-color:#3498db;
+    color:#fff
+}
+
+#searchUser {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Добавляем стиль для кнопки поиска */
+#searchButton {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Добавляем стиль для кнопки поиска при наведении */
+#searchButton:hover {
+    background-color: #207bb0;
+}
+
+
+
+.message_main{display:flex;max-width:1200px;margin:20px auto}
+
+#message-display {
+    flex: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+#message-input {
+    margin-bottom: 10px;
+}
+
+#send-button {
+    padding: 8px;
+    background-color: #999;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.AboutUser{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.user-message {
+    background-color: #999;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    align-self: flex-end;
+}
+
+.other-message {
+    background-color: #ddd;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+.chat-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.chat-item:hover {
+    background-color: #eee;
+}
+
+.selected-chat {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.missing-profile {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.User-Profile {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gender {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.InputCreate{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+.CreateProfile {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+.CreateLostForm {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.AboutLost {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Стили для экранов меньше 600 пикселей ширины */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-size: 10px;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    nav {
+        background-color: #eee;
+        padding: 1em;
+        border: 1px solid #ddd; /* Добавлен рамка вокруг навигации */
+        border-radius: 10px; /* Закругление углов */
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav li {
+        border: 1px solid #ccc; /* Добавлен рамка вокруг каждого элемента списка */
+        border-radius: 5px; /* Закругление углов элемента списка */
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        padding: 0.5em 1em;
+    }
+    
+    nav a:hover {
+        background-color: #ddd;
+    }
+    
+    
+    .MainMenuSection{
+        max-width: 600px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .missing-profile-section {
+        max-width: 600px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        position: static;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .login-link {
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+    .login-link a {
+        color: #333;
+        text-decoration: underline;
+    }
+    
+    .SelectBirthdate {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+    .RegisterForm {
+        max-width: 400px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .missing-profile-block {
+        background-color: #ff9999;
+        padding: 1em;
+        text-align: center;
+        margin: 2em auto;
+        border-radius: 10px;
+        max-width: 300px;
+    }
+    
+    .missing-profile-block a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    
+    input {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+    
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .register-link {
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    .register-link a {
+        color: #333;
+        text-decoration: underline;
+    }
+    
+    .back-to-home {
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+    .back-to-home a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .chat-list{
+        flex:1;
+        background-color:#ddd;
+        padding:20px;
+        border-right:1px solid #999;
+        overflow-y:auto
+    }
+    .chat-area{
+        flex:3;
+        padding:20px
+    }
+    .chat-item{
+        cursor:pointer;
+        margin-bottom:10px;
+        padding:10px;
+        border-radius:5px;
+        background-color:#fff
+    }
+    .chat-item:hover{
+        background-color:#eee
+    }
+    .selected-chat{
+        background-color:#3498db;
+        color:#fff}
+    
+    .message_main{display:flex;max-width:1200px;margin:20px auto}
+    
+    #message-display {
+        flex: 1;
+        overflow-y: auto;
+        border-bottom: 1px solid #999;
+        margin-bottom: 10px;
+    }
+    
+    #message-input {
+        margin-bottom: 10px;
+    }
+    
+    #send-button {
+        padding: 8px;
+        background-color: #3498db;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    .AboutUser{
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+    
+    .user-message {
+        background-color: #3498db;
+        color: #fff;
+        padding: 8px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        align-self: flex-end;
+    }
+    
+    .other-message {
+        background-color: #ddd;
+        color: #333;
+        padding: 8px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        align-self: flex-start;
+    }
+    
+    .chat-item {
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    
+    .chat-item:hover {
+        background-color: #eee;
+    }
+    
+    .selected-chat {
+        background-color: #3498db;
+        color: #fff;
+    }
+    
+    .missing-profile {
+        max-width: 600px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .User-Profile {
+        max-width: 600px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gender {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+    
+    .InputCreate{
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+    
+    .CreateProfile {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+    }
+    .CreateLostForm {
+        max-width: 600px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .AboutLost {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        box-sizing: border-box;
+    }
+
+    /* Дополнительные стили для мобильных устройств */
+}

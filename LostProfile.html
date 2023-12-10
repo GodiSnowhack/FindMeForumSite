@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пропавшего</title>
+    <link rel="stylesheet" href="1styles.css">
+    <script src="scripts.js"></script>
+    
+</head>
+<body>
+
+    <header onclick="redirectToHomePage()">
+        <h1>Найди Меня</h1>
+        <nav>
+            <ul>
+                <li><a href="UserProfile.html">Профиль</a></li>
+                <li><a href="Chats.html">Личные сообщения</a></li>
+                <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="Authorization.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="missing-profile">
+        <h2>Профиль пропавшего</h2>
+
+        <img src="path/to/missing_person_photo.jpg" alt="Фотография пропавшего">
+
+        <label for="fullname">ФИО:</label>
+        <p>Иванов Иван Иванович</p>
+
+        <label for="birthdate">Дата рождения:</label>
+        <p>01.01.1990</p>
+
+        <label for="gender">Пол:</label>
+        <p>Мужской</p>
+
+        <label for="nationality">Национальность:</label>
+        <p>Русский</p>
+
+        <label for="last_location">Последнее местоположение:</label>
+        <p>Город, улица</p>
+
+        <div class="gallery">
+            <img src="path/to/photo1.jpg" alt="Фотография 1" class="thumbnail" onclick="openModal('path/to/photo1.jpg')">
+            <img src="path/to/photo2.jpg" alt="Фотография 2" class="thumbnail" onclick="openModal('path/to/photo2.jpg')">
+            <img src="path/to/photo3.jpg" alt="Фотография 3" class="thumbnail" onclick="openModal('path/to/photo3.jpg')">
+            <!-- Добавьте дополнительные миниатюры по вашему усмотрению -->
+        </div>
+
+        <div id="myModal" class="modal" onclick="closeModal()">
+            <div class="modal-content">
+                <img id="modalImg" class="modal-img">
+            </div>
+        </div>
+        <label for="description">Описание:</label>
+        <p>Здесь может быть описание пропавшего.</p>
+    </section>
+
+    <section class="missing-profile">
+        <div class="comment-buttons">
+            <button onclick="showCommentsPanel('comments')">Комментарии</button>
+            <button onclick="showCommentsPanel('addComment')">Добавить комментарий</button>
+        </div>
+
+        <!-- Панель комментариев -->
+        <div class="comments-panel" id="commentsPanel">
+            <div id="comments" class="comments">
+                <!-- Список комментариев здесь -->
+            </div>
+            <div id="addCommentPanel" class="add-comment-panel">
+                <input type="text" id="commentInput" placeholder="Введите комментарий">
+                <button onclick="addComment()">Добавить</button>
+            </div>
+        </div>
+    </section>
+        
+
+    <footer>
+        <p>&copy; 2023 Поиск пропавших людей</p>
+        <p>По вопросам авторства или проблем с данными</p> 
+        <p>обращаться на почту: aprel955@mail.ru</p>
+    </footer>
+</body>
+</html>

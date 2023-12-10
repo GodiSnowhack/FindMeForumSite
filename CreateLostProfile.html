@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание профиля пропавшего</title>
+    <link rel="stylesheet" href="1styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    <header onclick="redirectToHomePage()">
+        <h1>Найди Меня</h1>
+        <nav>
+            <ul>
+                <li><a href="UserProfile.html">Профиль</a></li>
+                <li><a href="Chats.html">Личные сообщения</a></li>
+                <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="Authorization.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="CreateLostForm" action="create_missing_process.php" method="post" enctype="multipart/form-data">
+        <h2>Создание профиля пропавшего</h2>
+
+        <label for="fullname">ФИО:</label>
+        <input class="InputCreate" type="text" id="fullname" name="fullname" required>
+
+        <label for="gender">Пол:</label>
+        <select class="gender"  id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+        </select>
+
+        <label for="nationality">Национальность:</label>
+        <input class="InputCreate" type="text" id="nationality" name="nationality" required>
+
+        <label for="last_location">Последнее местоположение:</label>
+        <input class="InputCreate" type="text" id="last_location" name="last_location" required>
+
+        <label for="description">Описание:</label>
+        <textarea class="AboutLost" id="description" name="description" rows="4" required></textarea>
+
+        <label for="photos">Фотографии пропавшего:</label>
+        <input class="InputCreate" type="file" id="photos" name="photos[]" accept="image/*" multiple required>
+
+        <button class="CreateProfile" type="submit">Создать профиль</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2023 Поиск пропавших людей</p>
+        <p>По вопросам авторства или проблем с данными</p> 
+        <p>обращаться на почту: aprel955@mail.ru</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="1styles.css">
+    <script src="scripts.js"></script>
+    
+</head>
+<body>
+
+    <header onclick="redirectToHomePage()">
+        <h1>Найди Меня</h1>
+        <nav>
+            <ul>
+                <li><a href="UserProfile.html">Профиль</a></li>
+                <li><a href="Chats.html">Личные сообщения</a></li>
+                <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="Authorization.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="RegisterForm" action="register_process.php" method="post">
+        <h2>Регистрация</h2>
+
+        <label for="fullname">ФИО:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="birthdate">Дата рождения:</label>
+        <input class="SelectBirthdate" type="date" id="birthdate" name="birthdate" required>
+
+        <label for="gender">Пол:</label>
+        <select class="gender" id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+        </select>
+
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Зарегистрироваться</button>
+
+        <div class="login-link">
+            <p>Уже есть аккаунт? <a href="Authorization.html">Войдите</a></p>
+        </div>
+    </form>
+
+    <footer>
+        <p>&copy; 2023 Поиск пропавших людей</p>
+        <p>По вопросам авторства или проблем с данными</p> 
+        <p>обращаться на почту: aprel955@mail.ru</p>
+    </footer>
+</body>
+</html>

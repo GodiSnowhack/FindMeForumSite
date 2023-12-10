@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личные сообщения</title>
+    <link rel="stylesheet" href="1styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+    
+
+    <header onclick="redirectToHomePage()">
+        <h1>Найди Меня</h1>
+        <nav>
+            <ul>
+                <li><a href="UserProfile.html">Профиль</a></li>
+                <li><a href="Chats.html">Личные сообщения</a></li>
+                <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="Authorization.html">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main class="message_main">
+
+        <div >
+            <label for="searchUser">Поиск пользователей:</label>
+            <input type="text" id="searchUser" placeholder="Введите ФИО">
+            <button onclick="searchUsers()">Найти</button>
+        </div>
+
+        <div class="chat-list">
+            <div class="chat-item" onclick="selectChat(1)">Семеняк Ольга Дмитреевна</div>
+            <div class="chat-item" onclick="selectChat(2)">Куминов Илья Игоревич</div>
+        </div>
+
+        <div class="chat-area">
+            <div id="message-display"></div>
+            <input type="text" id="message-input" placeholder="Введите сообщение">
+            <button id="send-button" onclick="sendMessage()">Отправить</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Поиск пропавших людей</p>
+        <p>По вопросам авторства или проблем с данными</p> 
+        <p>обращаться на почту: aprel955@mail.ru</p>
+    </footer>
+</body>
+</html>
