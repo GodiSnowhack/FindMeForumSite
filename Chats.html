@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личные сообщения</title>
-    <link rel="stylesheet" href="1styles.css">
+    <link rel="stylesheet" href="2styles.css" id="theme-style">
     <script src="scripts.js"></script>
 </head>
 <body>
@@ -12,7 +12,10 @@
     
 
     <header onclick="redirectToHomePage()">
-        <h1>Найди Меня</h1>
+        <div class="logo-container">
+            <img src="photos/FindME.png" alt="Логотип Найди Меня" class="logo">
+            
+        </div>
         <nav>
             <ul>
                 <li><a href="UserProfile.html">Профиль</a></li>
@@ -22,6 +25,8 @@
             </ul>
         </nav>
     </header>
+
+    <button id="themeToggle">Переключить тему</button>
 
     <!-- Отделенный блок для поиска пользователей -->
     <div id="searchUserContainer">

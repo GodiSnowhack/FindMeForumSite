@@ -45,16 +45,6 @@ nav a:hover {
 }
 
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 40px; /* Установите нужную ширину */
-    height: auto; /* Это обеспечивает автоматическое подстраивание высоты */
-    margin-right: 10px; /* Расстояние между логотипом и заголовком */
-}
 
 .MainMenuSection{
     max-width: 600px;
@@ -282,7 +272,18 @@ button {
     flex: 1;
 }
 
-.message_main{display:flex;max-width:1200px;margin:20px auto}
+.message_main {
+    display: flex;
+    justify-content: center; /* Выравнивание по центру */
+    height: 100vh; /* 100% высоты окна просмотра */
+}
+
+.chat-section {
+    display: flex;
+    max-width: 600px; /* Максимальная ширина блока с чатом */
+    width: 100%; /* Занимает 100% доступной ширины */
+    border: 1px solid #ddd; /* Граница для отладки */
+}
 
 #message-display {
     flex: 1;

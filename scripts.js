@@ -83,6 +83,18 @@ function searchUsers() {
     // Ваш код для выполнения поиска
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById("themeToggle");
+    const themeStyle = document.getElementById("theme-style");
+
+    themeToggle.addEventListener("click", function () {
+        if (themeStyle.getAttribute("href") === "1styles.css") {
+            themeStyle.setAttribute("href", "2styles.css");
+        } else {
+            themeStyle.setAttribute("href", "1styles.css");
+        }
+    });
+});
 
 const commentsData1 = {}; // Объект для хранения комментариев первого поля
 const commentsData2 = {}; // Объект для хранения комментариев второго поля
