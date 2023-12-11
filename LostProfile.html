@@ -4,75 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профиль пропавшего</title>
-    <link rel="stylesheet" href="2styles.css" id="theme-style">
+    <link rel="stylesheet" href="light.css" id="theme-style">
     
     
 </head>
 <body>
 
-    <header onclick="redirectToHomePage()">
-        <div class="logo-container">
+    <header>
+        <div class="logo-container" onclick="redirectToHomePage()">
             <img src="photos/FindME.png" alt="Логотип Найди Меня" class="logo">
-            
         </div>
+        Профиль пропавшего
+        <button id="themeToggle">Переключить тему</button>
         <nav>
             <ul>
                 <li><a href="UserProfile.html">Профиль</a></li>
                 <li><a href="Chats.html">Личные сообщения</a></li>
                 <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="ListOfLosted.html">Списки пропавших</a></li>
                 <li><a href="Authorization.html">Авторизация</a></li>
+                <img src="photos/icons8-солнце-50.png" alt="Переключение на темную" id="themeToggle">
             </ul>
         </nav>
     </header>
 
-    <button id="themeToggle">Переключить тему</button>
+    
     
     <section class="missing-profile">
         <h2>Профиль пропавшего</h2>
-
         <img src="photos/WIN_20230219_15_03_17_Pro.jpg" class="lostPhotos" alt="Фотография пропавшего">
-
         <label for="fullname">ФИО:</label>
         <p>Дуанбай Бақтияр Болатұлы</p>
-
         <label for="birthdate">Дата рождения:</label>
         <p>23.04.2003</p>
-
         <label for="gender">Пол:</label>
         <p>Мужской</p>
-
         <label for="nationality">Национальность:</label>
         <p>Казах</p>
-
         <label for="last_location">Последнее местоположение:</label>
         <p>Город Петропавловкс, улица Назарбаева 51</p>
-
         <label for="last_day">Последний день когда его видели</label>
         <p>11.02.2023</p>
-
         <div class="gallery">
             <img src="photos/photo_2023-12-11_10-19-49.jpg" alt="Фотография 1" class="thumbnail" onclick="openFullScreen(this)">
             <img src="photos/photo_2023-12-11_10-19-53.jpg" alt="Фотография 2" class="thumbnail" onclick="openFullScreen(this)">
             <img src="photos/photo_2023-12-11_10-19-54.jpg" alt="Фотография 3" class="thumbnail" onclick="openFullScreen(this)">
             <!-- Добавьте дополнительные миниатюры по вашему усмотрению -->
         </div>
-
         <div id="modal" class="modal">
             <span class="close" onclick="closeFullScreen()">&times;</span>
             <img src="" alt="Full Screen Image" id="fullScreenImage">
         </div>
-
         <label for="description">Описание:</label>
         <p>Староста группы ИС-21. Очень много работал над несколькими проектами. Решил выйти прогуляться и купить соленного арахиса. На нем была красная футболка, синие джинсы, тонкая зеленая кофта, черная куртка </p>
     </section>
-
     <section class="missing-profile">
         <div class="comment-buttons">
             <button onclick="switchComments('comments1')">Комментарии 1</button>
             <button onclick="switchComments('comments2')">Комментарии 2</button>
-            
         </div>
-
         <!-- Панель комментариев -->
         <div class="comments-panel" id="commentsPanel">
             <div id="comments1" class="comments">

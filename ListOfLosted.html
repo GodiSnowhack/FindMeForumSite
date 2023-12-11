@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="light.css" id="theme-style">
+    <title>Список пропавших</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container" onclick="redirectToHomePage()">
+            <img src="photos/FindME.png" alt="Логотип Найди Меня" class="logo">
+        </div>
+        Список пропавших
+        <nav>
+            <ul>
+                <li><a href="UserProfile.html">Профиль</a></li>
+                <li><a href="Chats.html">Личные сообщения</a></li>
+                <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="ListOfLosted.html">Списки пропавших</a></li>
+                <li><a href="Authorization.html">Авторизация</a></li>
+                <img src="photos/icons8-солнце-50.png" alt="Переключение на темную" id="themeToggle">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Поиск по объявлениям" oninput="filterProfiles()">
+        </div>
+
+        <!-- Примеры объявлений (замените на реальные данные) -->
+        <a href="LostProfile.html" class="lost-profile">
+            <img src="photos/WIN_20230219_15_03_17_Pro.jpg" alt="Фото 1" class="profile-image">
+            Дуанбай Бақтияр Болатұлы</a>
+        <a href="LostProfile.html" class="lost-profile">
+            <img src="photos/WIN_20230219_15_03_17_Pro.jpg" alt="Фото 1" class="profile-image">
+            Дуанбай Бақтияр Болатұлы</a>
+        <a href="LostProfile.html" class="lost-profile">
+            <img src="photos/WIN_20230219_15_03_17_Pro.jpg" alt="Фото 1" class="profile-image">
+            Дуанбай Бақтияр Болатұлы</a>
+        <a href="LostProfile.html" class="lost-profile">
+            <img src="photos/WIN_20230219_15_03_17_Pro.jpg" alt="Фото 1" class="profile-image">
+            Дуанбай Бақтияр Болатұлы</a>
+        <a href="LostProfile.html" class="lost-profile">
+            <img src="photos/WIN_20230219_15_03_17_Pro.jpg" alt="Фото 1" class="profile-image">
+            Дуанбай Бақтияр Болатұлы</a>
+        <!-- Добавьте дополнительные ссылки по вашему усмотрению -->
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Godordom</p>
+        <p>По вопросам авторства или проблем с данными</p> 
+        <p>обращаться на почту: aprel955@mail.ru</p>
+        <script src="scripts.js"></script>
+    </footer>
+</body>
+</html>

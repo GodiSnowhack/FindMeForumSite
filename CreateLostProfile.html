@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Создание профиля пропавшего</title>
-    <link rel="stylesheet" href="2styles.css" id="theme-style">
+    <link rel="stylesheet" href="light.css" id="theme-style">
     <script src="scripts.js"></script>
 </head>
 <body>
 
-    <header onclick="redirectToHomePage()">
-        <div class="logo-container">
+    <header>
+        <div class="logo-container" onclick="redirectToHomePage()">
             <img src="photos/FindME.png" alt="Логотип Найди Меня" class="logo">
-            
         </div>
+        Создать профиль пропавшего
         <nav>
             <ul>
                 <li><a href="UserProfile.html">Профиль</a></li>
                 <li><a href="Chats.html">Личные сообщения</a></li>
                 <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="ListOfLosted.html">Списки пропавших</a></li>
                 <li><a href="Authorization.html">Авторизация</a></li>
+                <img src="photos/icons8-солнце-50.png" alt="Переключение на темную" id="themeToggle">
             </ul>
         </nav>
     </header>
-
-    <button id="themeToggle">Переключить тему</button>
 
     <form class="CreateLostForm" action="create_missing_process.php" method="post" enctype="multipart/form-data">
         <h2>Создание профиля пропавшего</h2>

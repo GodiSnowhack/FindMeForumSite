@@ -86,15 +86,30 @@ function searchUsers() {
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("themeToggle");
     const themeStyle = document.getElementById("theme-style");
+    const changeImage = document.getElementById("themeToggle");
 
     themeToggle.addEventListener("click", function () {
-        if (themeStyle.getAttribute("href") === "1styles.css") {
-            themeStyle.setAttribute("href", "2styles.css");
+        if (themeStyle.getAttribute("href") === "light.css") {
+            themeStyle.setAttribute("href", "dark.css");
         } else {
-            themeStyle.setAttribute("href", "1styles.css");
+            themeStyle.setAttribute("href", "light.css");
         }
     });
+
+    // Сохраняем пути к изображениям
+    const imagePaths = ['photos/icons8-солнце-50.png', 'photos/icons8-луна-50.png'];
+    let currentImageIndex = 0;
+
+    changeImage.addEventListener('click', function () {
+        // Переключаем индекс изображения
+        currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+
+        // Устанавливаем новый путь к изображению
+        this.src = imagePaths[currentImageIndex];
+    });
 });
+
+
 
 const commentsData1 = {}; // Объект для хранения комментариев первого поля
 const commentsData2 = {}; // Объект для хранения комментариев второго поля
@@ -167,4 +182,20 @@ function createCommentElement(comment) {
     commentElement.classList.add('comment-item');
     commentElement.innerHTML = `<p>${comment.text}</p>`;
     return commentElement;
+}
+
+function filterProfiles() {
+    const searchInput = document.getElementById('search-input');
+    const profiles = document.querySelectorAll('.lost-profile');
+
+    const searchTerm = searchInput.value.toLowerCase();
+
+    profiles.forEach(profile => {
+        const profileText = profile.textContent.toLowerCase();
+        if (profileText.includes(searchTerm)) {
+            profile.style.display = 'block';
+        } else {
+            profile.style.display = 'none';
+        }
+    });
 }

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="2styles.css" id="theme-style">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="light.css" id="theme-style">
 </head>
 <body>
 
-    <header onclick="redirectToHomePage()">
-        <div class="logo-container">
+    <header>
+        <div class="logo-container" onclick="redirectToHomePage()">
             <img src="photos/FindME.png" alt="Логотип Найди Меня" class="logo">
-            
         </div>
+        Главное меню
         <nav>
             <ul>
                 <li><a href="UserProfile.html">Профиль</a></li>
                 <li><a href="Chats.html">Личные сообщения</a></li>
                 <li><a href="CreateLostProfile.html">Создать профиль пропавшего</a></li>
+                <li><a href="ListOfLosted.html">Списки пропавших</a></li>
                 <li><a href="Authorization.html">Авторизация</a></li>
+                <img src="photos/icons8-солнце-50.png" alt="Переключение на темную" id="themeToggle">
             </ul>
         </nav>
     </header>
 
-    <button id="themeToggle">Переключить тему</button>
-
+    
     <section class="MainMenuSection">
         <h2>Добро пожаловать на сайт по поиску пропавших людей "Найди меня"!</h2>
         <p>На данном сайте вы можете выставить свое объявление о пропаже человека, а также помочь в поисках других людей</p>
@@ -33,29 +33,22 @@
         <p>Начните использование сайта, выбрав одну из опций в меню.</p>
     </section>
 
+    <section class="MainMenuSection">
 
-    <section class="missing-profile-section">
-        <div class="missing-profile-block">
-            <a href="LostProfile.html">Иванов Иван Иванович</a>
-        </div>
-        <div class="missing-profile-block">
-            <a href="LostProfile.html">Рамазанов Дамир Саматулы</a>
-        </div>
-        <div class="missing-profile-block">
-            <a href="LostProfile.html">Куминов Илья Игоревич</a>
-        </div>
-        <div class="missing-profile-block">
-            <a href="LostProfile.html">Дуанбай Бақтияр Болатұлы</a>
-        </div>
-
+        <article>
+            <h2>Новости</h2>
+        </article>
+        <article>
+            <h2>Рождение "Найди меня"</h2>
+            <p>Сайт по поиску пропавших людей "Найди меня" начал свою работу.</p>
+        </article>
     </section>
-    
 
-    
     <footer>
         <p>&copy; 2023 Godordom</p>
         <p>По вопросам авторства или проблем с данными</p> 
         <p>обращаться на почту: aprel955@mail.ru</p>
+        <script src="scripts.js"></script>
     </footer>
 
 

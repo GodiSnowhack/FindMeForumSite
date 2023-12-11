@@ -2,18 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0a0a0a;
 }
 
 header {
-    background-color: #333;
+    background-color: #161010;
     color: #fff;
     text-align: center;
     padding: 1em;
 }
 
 nav {
-    background-color: #eee;
+    background-color:   #312424;
     padding: 1em;
     border: 1px solid #ddd; /* Добавлен рамка вокруг навигации */
     border-radius: 10px; /* Закругление углов */
@@ -28,13 +28,13 @@ nav ul {
 }
 
 nav li {
-    border: 1px solid #271a1a; /* Добавлен рамка вокруг каждого элемента списка */
+    border: 1px solid #ccc; /* Добавлен рамка вокруг каждого элемента списка */
     border-radius: 5px; /* Закругление углов элемента списка */
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #f0f0f0;
     font-weight: bold;
     display: block;
     padding: 0.5em 1em;
@@ -42,15 +42,16 @@ nav a {
 
 nav a:hover {
     background-color: #ddd;
+    color: #000000;
 }
-
 
 
 .MainMenuSection{
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
-    background-color: #fff;
+    background-color: #311e1e;
+    color: #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -61,7 +62,8 @@ nav a:hover {
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
-    background-color: #fff;
+    background-color: #311e1e;
+    color: #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -69,13 +71,46 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #161010;
     color: #fff;
     text-align: center;
     padding: 1em;
     position: static;
     bottom: 0;
     width: 100%;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lost-profile {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 .login-link {
@@ -102,6 +137,12 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.chat-section {
+    display: flex;
+    max-width: 600px; /* Максимальная ширина блока с чатом */
+    width: 100%; /* Занимает 100% доступной ширины */
+    border: 1px solid #ddd; /* Граница для отладки */
+}
 
 .missing-profile-block {
     background-color: #ff9999;
@@ -278,13 +319,6 @@ button {
     height: 100vh; /* 100% высоты окна просмотра */
 }
 
-.chat-section {
-    display: flex;
-    max-width: 600px; /* Максимальная ширина блока с чатом */
-    width: 100%; /* Занимает 100% доступной ширины */
-    border: 1px solid #ddd; /* Граница для отладки */
-}
-
 #message-display {
     flex: 1;
     overflow-y: auto;
@@ -420,19 +454,19 @@ button {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background-color: #0a0a0a;
         font-size: 10px;
     }
     
     header {
-        background-color: #333;
+        background-color: #161010;
         color: #fff;
         text-align: center;
         padding: 1em;
     }
     
     nav {
-        background-color: #eee;
+        background-color: #312424;
         padding: 1em;
         border: 1px solid #ddd; /* Добавлен рамка вокруг навигации */
         border-radius: 10px; /* Закругление углов */
@@ -453,7 +487,7 @@ button {
     
     nav a {
         text-decoration: none;
-        color: #333;
+        color: #f0f0f0;
         font-weight: bold;
         display: block;
         padding: 0.5em 1em;
@@ -461,6 +495,7 @@ button {
     
     nav a:hover {
         background-color: #ddd;
+        color: #000000;
     }
     
     
@@ -468,7 +503,7 @@ button {
         max-width: 600px;
         margin: 2em auto;
         padding: 2em;
-        background-color: #fff;
+        background-color: #311e1e;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-between;
@@ -479,7 +514,7 @@ button {
         max-width: 600px;
         margin: 2em auto;
         padding: 2em;
-        background-color: #fff;
+        background-color: #311e1e;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-between;
@@ -487,7 +522,7 @@ button {
     }
     
     footer {
-        background-color: #333;
+        background-color: #161010;
         color: #fff;
         text-align: center;
         padding: 1em;
