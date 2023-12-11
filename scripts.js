@@ -1,11 +1,21 @@
-function openModal(imagePath) {
-    document.getElementById('myModal').style.display = 'flex';
-    document.getElementById('modalImg').src = imagePath;
+function openFullScreen(imgElement) {
+    var modal = document.getElementById('modal');
+    var fullScreenImg = document.getElementById('fullScreenImage');
+
+    fullScreenImg.src = imgElement.src;
+    modal.style.display = 'block';
 }
 
-function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
+function closeFullScreen() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'none';
 }
+
+// Добавляем обработчик события загрузки страницы
+window.onload = function () {
+    // Ваши скрипты, которые обрабатывают элементы DOM
+};
+
 
 function redirectToHomePage() {
     window.location.href = "MainMenu.html"; 
@@ -54,33 +64,53 @@ function sendMessage() {
 }
 
 
-function searchUsers() {
-    const searchInput = document.getElementById('searchUser');
-    const searchTerm = searchInput.value.trim();
+// Скрипт для управления видимостью поля поиска пользователей
+document.addEventListener("DOMContentLoaded", function() {
+    // Скрываем поле поиска при загрузке страницы
+    var searchUserContainer = document.getElementById("searchUserContainer");
+    searchUserContainer.style.display = "none";
+});
+
+// Функция для отображения/скрытия поля поиска
+function toggleSearch() {
+    var searchUserContainer = document.getElementById("searchUserContainer");
+    // Инвертируем видимость поля при каждом вызове функции
+    searchUserContainer.style.display = (searchUserContainer.style.display === "none" || searchUserContainer.style.display === "") ? "block" : "none";
 }
 
-const commentsData = {}; // Объект для хранения комментариев
+// Функция для выполнения поиска пользователей
+function searchUsers() {
+    // Ваш код для выполнения поиска
+}
 
-function showCommentsPanel(panelType) {
+
+const commentsData1 = {}; // Объект для хранения комментариев первого поля
+const commentsData2 = {}; // Объект для хранения комментариев второго поля
+let currentCommentsData = commentsData1; // Изначально используем данные первого поля
+
+function switchComments(commentsType) {
     const commentsPanel = document.getElementById('commentsPanel');
-    const comments = document.getElementById('comments');
+    const comments1 = document.getElementById('comments1');
+    const comments2 = document.getElementById('comments2');
     const addCommentPanel = document.getElementById('addCommentPanel');
 
-    // Переключаем видимость панелей в зависимости от типа
-    if (panelType === 'comments') {
-        comments.style.display = 'block';
-        addCommentPanel.style.display = 'none';
-        renderComments();
-    } else if (panelType === 'addComment') {
-        comments.style.display = 'none';
-        addCommentPanel.style.display = 'block';
-    }
+    // Скрываем/показываем панели в зависимости от выбранного поля
+    if (commentsType === 'comments1') {
+        currentCommentsData = commentsData1;
+        comments1.style.display = 'block';
+        comments2.style.display = 'none';
+        } else if (commentsType === 'comments2') {
+            currentCommentsData = commentsData2;
+            comments1.style.display = 'none';
+            comments2.style.display = 'block';
+        }
 
-    // Показываем или скрываем панель комментариев
-    if (commentsPanel.style.display === 'block') {
-        commentsPanel.style.display = 'none';
-    } else {
+        // Показываем или скрываем панель комментариев
+        if (commentsPanel.style.display === 'block') {
+            commentsPanel.style.display = 'none';
+        } else {
         commentsPanel.style.display = 'block';
+        renderComments();
     }
 }
 
@@ -88,19 +118,19 @@ function addComment() {
     const commentInput = document.getElementById('commentInput');
     const commentText = commentInput.value;
 
-        // Проверка наличия текста в поле ввода
-        if (commentText.trim() !== '') {
-            const newComment = { text: commentText, replies: [] };
-            commentsData[new Date().getTime()] = newComment;
-            commentInput.value = '';
-            showCommentsPanel('comments');
-        }
+    // Проверка наличия текста в поле ввода
+    if (commentText.trim() !== '') {
+        const newComment = { text: commentText, replies: [] };
+        currentCommentsData[new Date().getTime()] = newComment;
+        commentInput.value = '';
+        renderComments();
+    }
 }
 
 function renderComments() {
     const commentsContainer = document.getElementById('comments');
     commentsContainer.innerHTML = '';
-        renderCommentTree(commentsContainer, commentsData);
+    renderCommentTree(commentsContainer, currentCommentsData);
 }
 
 function renderCommentTree(container, comments) {

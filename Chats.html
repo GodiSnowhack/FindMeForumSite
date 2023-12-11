@@ -23,30 +23,34 @@
         </nav>
     </header>
 
-    
+    <!-- Отделенный блок для поиска пользователей -->
+    <div id="searchUserContainer">
+        <label for="searchUser">Поиск пользователей:</label>
+        <input type="text" id="searchUser" placeholder="Введите ФИО">
+        <button onclick="searchUsers()">Найти</button>
+    </div>
+
+    <!-- Кнопка для отображения/скрытия блока поиска -->
+    <button onclick="toggleSearch()">Поиск</button>
 
     <main class="message_main">
+        <!-- Блок для чата -->
+        <div class="chat-section">
+            <div class="chat-list">
+                <div class="chat-item" onclick="selectChat(1)">Семеняк Ольга Дмитреевна</div>
+                <div class="chat-item" onclick="selectChat(2)">Куминов Илья Игоревич</div>
+            </div>
 
-        <div >
-            <label for="searchUser">Поиск пользователей:</label>
-            <input type="text" id="searchUser" placeholder="Введите ФИО">
-            <button onclick="searchUsers()">Найти</button>
-        </div>
-
-        <div class="chat-list">
-            <div class="chat-item" onclick="selectChat(1)">Семеняк Ольга Дмитреевна</div>
-            <div class="chat-item" onclick="selectChat(2)">Куминов Илья Игоревич</div>
-        </div>
-
-        <div class="chat-area">
-            <div id="message-display"></div>
-            <input type="text" id="message-input" placeholder="Введите сообщение">
-            <button id="send-button" onclick="sendMessage()">Отправить</button>
+            <div class="chat-area">
+                <div id="message-display"></div>
+                <input type="text" id="message-input" placeholder="Введите сообщение">
+                <button id="send-button" onclick="sendMessage()">Отправить</button>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 Поиск пропавших людей</p>
+        <p>&copy; 2023 Godordom</p>
         <p>По вопросам авторства или проблем с данными</p> 
         <p>обращаться на почту: aprel955@mail.ru</p>
     </footer>

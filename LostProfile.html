@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профиль пропавшего</title>
     <link rel="stylesheet" href="1styles.css">
-    <script src="scripts.js"></script>
+    
     
 </head>
 <body>
@@ -25,60 +25,69 @@
     <section class="missing-profile">
         <h2>Профиль пропавшего</h2>
 
-        <img src="path/to/missing_person_photo.jpg" alt="Фотография пропавшего">
+        <img src="photos/WIN_20230219_15_03_17_Pro.jpg" class="lostPhotos" alt="Фотография пропавшего">
 
         <label for="fullname">ФИО:</label>
-        <p>Иванов Иван Иванович</p>
+        <p>Дуанбай Бақтияр Болатұлы</p>
 
         <label for="birthdate">Дата рождения:</label>
-        <p>01.01.1990</p>
+        <p>23.04.2003</p>
 
         <label for="gender">Пол:</label>
         <p>Мужской</p>
 
         <label for="nationality">Национальность:</label>
-        <p>Русский</p>
+        <p>Казах</p>
 
         <label for="last_location">Последнее местоположение:</label>
-        <p>Город, улица</p>
+        <p>Город Петропавловкс, улица Назарбаева 51</p>
+
+        <label for="last_day">Последний день когда его видели</label>
+        <p>11.02.2023</p>
 
         <div class="gallery">
-            <img src="path/to/photo1.jpg" alt="Фотография 1" class="thumbnail" onclick="openModal('path/to/photo1.jpg')">
-            <img src="path/to/photo2.jpg" alt="Фотография 2" class="thumbnail" onclick="openModal('path/to/photo2.jpg')">
-            <img src="path/to/photo3.jpg" alt="Фотография 3" class="thumbnail" onclick="openModal('path/to/photo3.jpg')">
+            <img src="photos/photo_2023-12-11_10-19-49.jpg" alt="Фотография 1" class="thumbnail" onclick="openFullScreen(this)">
+            <img src="photos/photo_2023-12-11_10-19-53.jpg" alt="Фотография 2" class="thumbnail" onclick="openFullScreen(this)">
+            <img src="photos/photo_2023-12-11_10-19-54.jpg" alt="Фотография 3" class="thumbnail" onclick="openFullScreen(this)">
             <!-- Добавьте дополнительные миниатюры по вашему усмотрению -->
         </div>
 
-        <div id="myModal" class="modal" onclick="closeModal()">
-            <div class="modal-content">
-                <img id="modalImg" class="modal-img">
-            </div>
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeFullScreen()">&times;</span>
+            <img src="" alt="Full Screen Image" id="fullScreenImage">
         </div>
+
         <label for="description">Описание:</label>
-        <p>Здесь может быть описание пропавшего.</p>
+        <p>Староста группы ИС-21. Очень много работал над несколькими проектами. Решил выйти прогуляться и купить соленного арахиса. На нем была красная футболка, синие джинсы, тонкая зеленая кофта, черная куртка </p>
     </section>
 
     <section class="missing-profile">
         <div class="comment-buttons">
-            <button onclick="showCommentsPanel('comments')">Комментарии</button>
-            <button onclick="showCommentsPanel('addComment')">Добавить комментарий</button>
+            <button onclick="switchComments('comments1')">Комментарии 1</button>
+            <button onclick="switchComments('comments2')">Комментарии 2</button>
+            
         </div>
 
         <!-- Панель комментариев -->
         <div class="comments-panel" id="commentsPanel">
-            <div id="comments" class="comments">
-                <!-- Список комментариев здесь -->
+            <div id="comments1" class="comments">
+                <!-- Список комментариев для первого поля здесь -->
+            </div>
+            <div id="comments2" class="comments">
+                <!-- Список комментариев для второго поля здесь -->
             </div>
             <div id="addCommentPanel" class="add-comment-panel">
                 <input type="text" id="commentInput" placeholder="Введите комментарий">
                 <button onclick="addComment()">Добавить</button>
             </div>
         </div>
-    </section>
         
+    
+        <script src="scripts.js"></script>
+    </section>
 
     <footer>
-        <p>&copy; 2023 Поиск пропавших людей</p>
+        <p>&copy; 2023 Godordom</p>
         <p>По вопросам авторства или проблем с данными</p> 
         <p>обращаться на почту: aprel955@mail.ru</p>
     </footer>
