@@ -28,7 +28,7 @@ nav ul {
 }
 
 nav li {
-    border: 1px solid #ccc; /* Добавлен рамка вокруг каждого элемента списка */
+    border: 1px solid #271a1a; /* Добавлен рамка вокруг каждого элемента списка */
     border-radius: 5px; /* Закругление углов элемента списка */
 }
 
@@ -44,6 +44,17 @@ nav a:hover {
     background-color: #ddd;
 }
 
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Установите нужную ширину */
+    height: auto; /* Это обеспечивает автоматическое подстраивание высоты */
+    margin-right: 10px; /* Расстояние между логотипом и заголовком */
+}
 
 .MainMenuSection{
     max-width: 600px;
