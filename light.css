@@ -3,6 +3,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;}
+.MainMenuSection{
+        max-width: 600px;
+        margin: 2em auto;
+        padding: 2em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;}
 header {
     background-color: #333;
     color: #fff;
@@ -33,15 +42,6 @@ nav a {
     padding: 0.5em 1em;}
 nav a:hover {
     background-color: #ddd;}
-.MainMenuSection{
-    max-width: 600px;
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;}
 .missing-profile-section {
     max-width: 600px;
     margin: 2em auto;
@@ -59,72 +59,36 @@ footer {
     position: static;
     bottom: 0;
     width: 100%;}
-.login-link {
-    text-align: center;
-    margin-top: 1em;}
-.login-link a {
-    color: #333;
-    text-decoration: underline;}
-.SelectBirthdate {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    box-sizing: border-box;}
-.RegisterForm {
-    max-width: 400px;
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #fff;
+.login-link {text-align: center;margin-top: 1em;}
+.login-link a {color: #333;text-decoration: underline;}
+.SelectBirthdate {width: 100%;padding: 0.5em;
+    margin-bottom: 1em;box-sizing: border-box;}
+.RegisterForm {max-width: 400px;margin: 2em auto;
+    padding: 2em;background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
-.missing-profile-block {
-    background-color: #ff9999;
-    padding: 1em;
-    text-align: center;
-    margin: 2em auto;
-    border-radius: 10px;
-    max-width: 300px;}
-.missing-profile-block a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;}
-.lostPhotos{
-    width: 200px;}
-.comment-item {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;}
+.gender {width: 100%;padding: 0.5em;margin-bottom: 
+    1em;box-sizing: border-box;}
+
+
+.missing-profile-block {background-color: #ff9999;padding: 1em;
+    text-align: center;margin: 2em auto;border-radius: 10px;max-width: 300px;}
+.missing-profile-block a {text-decoration: none;color: #333;font-weight: bold;}
+.missing-profile {max-width: 600px;margin: 2em auto;padding: 2em;background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.lostPhotos{width: 200px;}
+.thumbnail {max-width: 200px; max-height: 200px; cursor: pointer;margin: 10px;}
+.modal {display: none;position: fixed;z-index: 1;left: 0;top: 0;width: 100%;height: 100%;
+    overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.9);}
+.modal img {margin: auto;display: block;width: 80%;max-width: 50%;max-height: 100%;}
+.close {position: absolute;top: 15px;right: 20px; font-size: 30px;color: #fff;
+    cursor: pointer;}
+.gallery {display: flex;flex-wrap: wrap;justify-content: center;margin: 20px;}
+.gallery-item {width: 100%; max-width: 300px;height: auto;margin: 10px;
+        cursor: pointer;}
+.comment-item {margin-bottom: 10px;padding: 10px;border: 1px solid #ddd;
+    border-radius: 5px;background-color: #fff;}
 .replies-container {
     margin-left: 20px;}
-.thumbnail {
-    max-width: 100px; /* Установите максимальную ширину */
-    max-height: 100px; /* Установите максимальную высоту */
-    cursor: pointer;}
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);}
-.modal img {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 800px;
-    max-height: 100%;}
-.close {
-    position: absolute;
-    top: 15px;
-    right: 20px; /* Сделаем кнопку закрытия чуть ближе к краю */
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;}
 form {
     max-width: 400px;
     margin: 2em auto;
@@ -242,39 +206,18 @@ button {
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Центрируем изображения вместо space-around */
-    margin: 20px;}
-.gallery-item {
-    width: 100%; /* Используем 100% ширины для мобильных устройств */
-    max-width: 300px; /* Ограничиваем максимальную ширину */
-    height: auto;
-    margin: 10px;
-    cursor: pointer;}
 .chat-item:hover {
     background-color: #eee;}
 .selected-chat {
     background-color: #3498db;
     color: #fff;}
-.missing-profile {
-    max-width: 600px;
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .User-Profile {
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
-.gender {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    box-sizing: border-box;}
+
 .InputCreate{
     width: 100%;
     padding: 0.5em;

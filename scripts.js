@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function toggleSearch() {
     var searchUserContainer = document.getElementById("searchUserContainer");
     // Инвертируем видимость поля при каждом вызове функции
-    searchUserContainer.style.display = (searchUserContainer.style.display === "none" || searchUserContainer.style.display === "") ? "block" : "none";
+    searchUserContainer.style.display = (searchUserContainer.style.display === "none" || 
+    searchUserContainer.style.display === "") ? "block" : "none";
 }
 
 // Функция для выполнения поиска пользователей
