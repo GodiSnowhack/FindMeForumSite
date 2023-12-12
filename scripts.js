@@ -17,9 +17,7 @@ window.onload = function () {
 };
 
 
-function redirectToHomePage() {
-    window.location.href = "MainMenu.html"; 
-}
+
 
 const chatMessages = {}; // Объект для хранения сообщений каждого чата
 let selectedChat = null;
@@ -81,6 +79,11 @@ function toggleSearch() {
 // Функция для выполнения поиска пользователей
 function searchUsers() {
     // Ваш код для выполнения поиска
+}
+
+
+function redirectToHomePage() {
+    window.location.href = "MainMenu.html"; 
 }
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -2,55 +2,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
+    background-color: #f4f4f4;}
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em;
-}
-
+    padding: 1em;}
 nav {
     background-color: #eee;
     padding: 1em;
     border: 1px solid #ddd; /* Добавлен рамка вокруг навигации */
-    border-radius: 10px; /* Закругление углов */
-}
-
+    border-radius: 10px; /* Закругление углов */}
 section {
     max-width: 800px;
-    margin: 0 auto;
-}
-
+    margin: 0 auto;}
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-}
-
+    justify-content: space-around;}
 nav li {
     border: 1px solid #271a1a; /* Добавлен рамка вокруг каждого элемента списка */
-    border-radius: 5px; /* Закругление углов элемента списка */
-}
-
+    border-radius: 5px; /* Закругление углов элемента списка */}
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     display: block;
-    padding: 0.5em 1em;
-}
-
+    padding: 0.5em 1em;}
 nav a:hover {
-    background-color: #ddd;
-}
-
-
-
+    background-color: #ddd;}
 .MainMenuSection{
     max-width: 600px;
     margin: 2em auto;
@@ -59,9 +41,7 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
+    flex-wrap: wrap;}
 .missing-profile-section {
     max-width: 600px;
     margin: 2em auto;
@@ -70,9 +50,7 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
+    flex-wrap: wrap;}
 footer {
     background-color: #333;
     color: #fff;
@@ -80,71 +58,49 @@ footer {
     padding: 1em;
     position: static;
     bottom: 0;
-    width: 100%;
-}
-
+    width: 100%;}
 .login-link {
     text-align: center;
-    margin-top: 1em;
-}
-
+    margin-top: 1em;}
 .login-link a {
     color: #333;
-    text-decoration: underline;
-}
-
+    text-decoration: underline;}
 .SelectBirthdate {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 .RegisterForm {
     max-width: 400px;
     margin: 2em auto;
     padding: 2em;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .missing-profile-block {
     background-color: #ff9999;
     padding: 1em;
     text-align: center;
     margin: 2em auto;
     border-radius: 10px;
-    max-width: 300px;
-}
-
+    max-width: 300px;}
 .missing-profile-block a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
-}
-
+    font-weight: bold;}
 .lostPhotos{
-    width: 200px;
-}
-
+    width: 200px;}
 .comment-item {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #fff;
-}
-
+    background-color: #fff;}
 .replies-container {
-    margin-left: 20px;
-}
-
+    margin-left: 20px;}
 .thumbnail {
     max-width: 100px; /* Установите максимальную ширину */
     max-height: 100px; /* Установите максимальную высоту */
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .modal {
     display: none;
     position: fixed;
@@ -155,102 +111,72 @@ footer {
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-}
-
+    background-color: rgba(0,0,0,0.9);}
 .modal img {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 800px;
-    max-height: 100%;
-}
-
-
-
+    max-height: 100%;}
 .close {
     position: absolute;
     top: 15px;
     right: 20px; /* Сделаем кнопку закрытия чуть ближе к краю */
     font-size: 30px;
     color: #fff;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 form {
     max-width: 400px;
     margin: 2em auto;
     padding: 2em;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 label {
     display: block;
-    margin-bottom: 0.5em;
-}
-
+    margin-bottom: 0.5em;}
 input {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box;}
 button {
     background-color: #333;
     color: #fff;
     padding: 0.5em 1em;
     border: none;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .register-link {
     margin-top: 1em;
-    text-align: center;
-}
-
+    text-align: center;}
 .register-link a {
     color: #333;
-    text-decoration: underline;
-}
-
-
+    text-decoration: underline;}
 .chat-list{
     flex:1;
     background-color:#ddd;
     padding:20px;
     border-right:1px solid #999;
-    overflow-y:auto
-}
+    overflow-y:auto}
 .chat-area{
     flex:3;
-    padding:20px
-}
+    padding:20px}
 .chat-item{
     cursor:pointer;
     margin-bottom:10px;
     padding:10px;
     border-radius:5px;
-    background-color:#fff
-}
+    background-color:#fff}
 .chat-item:hover{
-    background-color:#eee
-}
+    background-color:#eee}
 .selected-chat{
     background-color:#3498db;
-    color:#fff
-}
-
+    color:#fff}
 #searchUser {
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
-}
-
-/* Добавляем стиль для кнопки поиска */
+    margin-right: 10px;}
 #searchButton {
     padding: 8px 12px;
     font-size: 14px;
@@ -258,49 +184,31 @@ button {
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Добавляем стиль для кнопки поиска при наведении */
+    cursor: pointer;}
 #searchButton:hover {
-    background-color: #207bb0;
-}
-
-/* Стили для блока поиска пользователей */
+    background-color: #207bb0;}
 #searchUserContainer {
     margin: 20px;
-    flex: 1;
-}
-
+    flex: 1;}
 #searchUser {
     margin-right: 10px;
-    flex: 1;
-}
-
+    flex: 1;}
 .message_main {
     display: flex;
     justify-content: center; /* Выравнивание по центру */
-    height: 100vh; /* 100% высоты окна просмотра */
-}
-
+    height: 100vh; /* 100% высоты окна просмотра */}
 .chat-section {
     display: flex;
     max-width: 600px; /* Максимальная ширина блока с чатом */
     width: 100%; /* Занимает 100% доступной ширины */
-    border: 1px solid #ddd; /* Граница для отладки */
-}
-
+    border: 1px solid #ddd; /* Граница для отладки */}
 #message-display {
     flex: 1;
     overflow-y: auto;
     border-bottom: 1px solid #999;
-    margin-bottom: 10px;
-}
-
+    margin-bottom: 10px;}
 #message-input {
-    margin-bottom: 10px;
-}
-
+    margin-bottom: 10px;}
 #send-button {
     padding: 8px;
     background-color: #999;
@@ -308,110 +216,87 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
-}
-
+    font-size: 14px;}
 .AboutUser{
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box;}
 .user-message {
     background-color: #999;
     color: #fff;
     padding: 8px;
     border-radius: 5px;
     margin-bottom: 5px;
-    align-self: flex-end;
-}
-
+    align-self: flex-end;}
 .other-message {
     background-color: #ddd;
     color: #333;
     padding: 8px;
     border-radius: 5px;
     margin-bottom: 5px;
-    align-self: flex-start;
-}
-
+    align-self: flex-start;}
 .chat-item {
     cursor: pointer;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #fff;
-}
-
+    background-color: #fff;}
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Центрируем изображения вместо space-around */
-    margin: 20px;
-}
+    margin: 20px;}
 .gallery-item {
     width: 100%; /* Используем 100% ширины для мобильных устройств */
     max-width: 300px; /* Ограничиваем максимальную ширину */
     height: auto;
     margin: 10px;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .chat-item:hover {
-    background-color: #eee;
-}
-
+    background-color: #eee;}
 .selected-chat {
     background-color: #3498db;
-    color: #fff;
-}
-
+    color: #fff;}
 .missing-profile {
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .User-Profile {
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .gender {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box;}
 .InputCreate{
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box;}
 .CreateProfile {
     background-color: #333;
     color: #fff;
     padding: 0.5em 1em;
     border: none;
-    cursor: pointer;
-}
+    cursor: pointer;}
 .CreateLostForm {
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.AboutLost {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    box-sizing: border-box;}
 .lost-profile {
     padding: 10px;
     margin-bottom: 10px;
@@ -421,31 +306,17 @@ button {
     text-decoration: none;
     color: #333;
     display: flex;
-    align-items: center;
-}
-
+    align-items: center;}
 .search-bar {
-    margin-bottom: 20px;
-}
-
+    margin-bottom: 20px;}
 #search-input {
     width: 100%;
     padding: 8px;
-    box-sizing: border-box;
-}
-
+    box-sizing: border-box;}
 .profile-image {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
-}
-.AboutLost {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-}
-
+    margin-right: 10px;}
 @media only screen and (max-width: 600px) {
     /* Стили для экранов меньше 600 пикселей ширины */
     body {
@@ -453,49 +324,34 @@ button {
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
-        font-size: 10px;
-    }
-    
+        font-size: 8px;}
     header {
         background-color: #333;
         color: #fff;
         text-align: center;
-        padding: 1em;
-    }
-    
+        padding: 1em;}
     nav {
         background-color: #eee;
         padding: 1em;
         border: 1px solid #ddd; /* Добавлен рамка вокруг навигации */
-        border-radius: 10px; /* Закругление углов */
-    }
-    
+        border-radius: 10px; /* Закругление углов */}
     nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: space-around;
-    }
-    
+        justify-content: space-around;}
     nav li {
         border: 1px solid #ccc; /* Добавлен рамка вокруг каждого элемента списка */
-        border-radius: 5px; /* Закругление углов элемента списка */
-    }
-    
+        border-radius: 5px; /* Закругление углов элемента списка */}
     nav a {
         text-decoration: none;
         color: #333;
         font-weight: bold;
         display: block;
-        padding: 0.5em 1em;
-    }
-    
+        padding: 0.5em 1em;}
     nav a:hover {
-        background-color: #ddd;
-    }
-    
-    
+        background-color: #ddd;}
     .MainMenuSection{
         max-width: 600px;
         margin: 2em auto;
@@ -504,9 +360,7 @@ button {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
+        flex-wrap: wrap;}
     .missing-profile-section {
         max-width: 600px;
         margin: 2em auto;
@@ -515,9 +369,7 @@ button {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
+        flex-wrap: wrap;}
     footer {
         background-color: #333;
         color: #fff;
@@ -525,136 +377,96 @@ button {
         padding: 1em;
         position: static;
         bottom: 0;
-        width: 100%;
-    }
-    
+        width: 100%;}
     .login-link {
         text-align: center;
-        margin-top: 1em;
-    }
-    
+        margin-top: 1em;}
     .login-link a {
         color: #333;
-        text-decoration: underline;
-    }
-    
+        text-decoration: underline;}
     .SelectBirthdate {
         width: 100%;
         padding: 0.5em;
         margin-bottom: 1em;
-        box-sizing: border-box;
-    }
+        box-sizing: border-box;}
     .RegisterForm {
         max-width: 400px;
         margin: 2em auto;
         padding: 2em;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
     .missing-profile-block {
         background-color: #ff9999;
         padding: 1em;
         text-align: center;
         margin: 2em auto;
         border-radius: 10px;
-        max-width: 300px;
-    }
-    
+        max-width: 300px;}
     .missing-profile-block a {
         text-decoration: none;
         color: #333;
-        font-weight: bold;
-    }
-    
+        font-weight: bold;}
     form {
         max-width: 400px;
         margin: 2em auto;
         padding: 2em;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
     label {
         display: block;
-        margin-bottom: 0.5em;
-    }
-    
+        margin-bottom: 0.5em;}
     input {
         width: 100%;
         padding: 0.5em;
         margin-bottom: 1em;
-        box-sizing: border-box;
-    }
-    
+        box-sizing: border-box;}
     button {
         background-color: #333;
         color: #fff;
         padding: 0.5em 1em;
         border: none;
-        cursor: pointer;
-    }
-    
+        cursor: pointer;}
     .register-link {
         margin-top: 1em;
-        text-align: center;
-    }
-    
+        text-align: center;}
     .register-link a {
         color: #333;
-        text-decoration: underline;
-    }
-    
+        text-decoration: underline;}
     .back-to-home {
         text-align: center;
-        margin-top: 1em;
-    }
-    
+        margin-top: 1em;}
     .back-to-home a {
         color: #fff;
         text-decoration: none;
-        font-weight: bold;
-    }
-    
+        font-weight: bold;}
     .chat-list{
         flex:1;
         background-color:#ddd;
         padding:20px;
         border-right:1px solid #999;
-        overflow-y:auto
-    }
+        overflow-y:auto}
     .chat-area{
         flex:3;
-        padding:20px
-    }
+        padding:20px}
     .chat-item{
         cursor:pointer;
         margin-bottom:10px;
         padding:10px;
         border-radius:5px;
-        background-color:#fff
-    }
+        background-color:#fff}
     .chat-item:hover{
-        background-color:#eee
-    }
+        background-color:#eee}
     .selected-chat{
         background-color:#3498db;
         color:#fff}
-    
     .message_main{display:flex;max-width:1200px;margin:20px auto}
-    
     #message-display {
         flex: 1;
         overflow-y: auto;
         border-bottom: 1px solid #999;
-        margin-bottom: 10px;
-    }
-    
+        margin-bottom: 10px;}
     #message-input {
-        margin-bottom: 10px;
-    }
-    
+        margin-bottom: 10px;}
     #send-button {
         padding: 8px;
         background-color: #3498db;
@@ -662,102 +474,74 @@ button {
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        font-size: 14px;
-    }
-    
+        font-size: 14px;}
     .AboutUser{
         width: 100%;
         padding: 0.5em;
         margin-bottom: 1em;
-        box-sizing: border-box;
-    }
-    
+        box-sizing: border-box;}
     .user-message {
         background-color: #3498db;
         color: #fff;
         padding: 8px;
         border-radius: 5px;
         margin-bottom: 5px;
-        align-self: flex-end;
-    }
-    
+        align-self: flex-end;}
     .other-message {
         background-color: #ddd;
         color: #333;
         padding: 8px;
         border-radius: 5px;
         margin-bottom: 5px;
-        align-self: flex-start;
-    }
-    
+        align-self: flex-start;}
     .chat-item {
         cursor: pointer;
         margin-bottom: 10px;
         padding: 10px;
         border-radius: 5px;
-        background-color: #fff;
-    }
-    
+        background-color: #fff;}
     .chat-item:hover {
-        background-color: #eee;
-    }
-    
+        background-color: #eee;}
     .selected-chat {
         background-color: #3498db;
-        color: #fff;
-    }
-    
+        color: #fff;}
     .missing-profile {
         max-width: 600px;
         margin: 2em auto;
         padding: 2em;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
     .User-Profile {
         max-width: 600px;
         margin: 2em auto;
         padding: 2em;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
     .gender {
         width: 100%;
         padding: 0.5em;
         margin-bottom: 1em;
-        box-sizing: border-box;
-    }
-    
+        box-sizing: border-box;}
     .InputCreate{
         width: 100%;
         padding: 0.5em;
         margin-bottom: 1em;
-        box-sizing: border-box;
-    }
-    
+        box-sizing: border-box;}
     .CreateProfile {
         background-color: #333;
         color: #fff;
         padding: 0.5em 1em;
         border: none;
-        cursor: pointer;
-    }
+        cursor: pointer;}
     .CreateLostForm {
         max-width: 600px;
         margin: 2em auto;
         padding: 2em;
         background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
     .AboutLost {
         width: 100%;
         padding: 0.5em;
         margin-bottom: 1em;
-        box-sizing: border-box;
-    }
-
-    /* Дополнительные стили для мобильных устройств */
+        box-sizing: border-box;}
 }

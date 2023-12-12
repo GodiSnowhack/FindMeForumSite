@@ -45,46 +45,45 @@
         <p>Город Петропавловкс, улица Назарбаева 51</p>
         <label for="last_day">Последний день когда его видели</label>
         <p>11.02.2023</p>
+        <p>Фотогалерея</p>
         <div class="gallery">
             <img src="photos/photo_2023-12-11_10-19-49.jpg" alt="Фотография 1" class="thumbnail" onclick="openFullScreen(this)">
             <img src="photos/photo_2023-12-11_10-19-53.jpg" alt="Фотография 2" class="thumbnail" onclick="openFullScreen(this)">
             <img src="photos/photo_2023-12-11_10-19-54.jpg" alt="Фотография 3" class="thumbnail" onclick="openFullScreen(this)">
-            <!-- Добавьте дополнительные миниатюры по вашему усмотрению -->
         </div>
         <div id="modal" class="modal">
             <span class="close" onclick="closeFullScreen()">&times;</span>
             <img src="" alt="Full Screen Image" id="fullScreenImage">
         </div>
         <label for="description">Описание:</label>
-        <p>Староста группы ИС-21. Очень много работал над несколькими проектами. Решил выйти прогуляться и купить соленного арахиса. На нем была красная футболка, синие джинсы, тонкая зеленая кофта, черная куртка </p>
+        <p>Староста группы ИС-21. Очень много работал над несколькими проектами. Решил выйти прогуляться и купить соленного арахиса. 
+            На нем была красная футболка, синие джинсы, тонкая зеленая кофта, черная куртка </p>
+        <label for="Status">Статус о пропавшем</label>
+        <p>Пропал без вести</p>
     </section>
+
     <section class="missing-profile">
         <div class="comment-buttons">
             <button onclick="switchComments('comments1')">Комментарии 1</button>
             <button onclick="switchComments('comments2')">Комментарии 2</button>
         </div>
-        <!-- Панель комментариев -->
         <div class="comments-panel" id="commentsPanel">
             <div id="comments1" class="comments">
-                <!-- Список комментариев для первого поля здесь -->
             </div>
             <div id="comments2" class="comments">
-                <!-- Список комментариев для второго поля здесь -->
             </div>
             <div id="addCommentPanel" class="add-comment-panel">
                 <input type="text" id="commentInput" placeholder="Введите комментарий">
                 <button onclick="addComment()">Добавить</button>
             </div>
         </div>
-        
-    
-        <script src="scripts.js"></script>
     </section>
 
     <footer>
-        <p>&copy; 2023 Godordom</p>
+        <p>&copy; 2023 «Найди меня» все права защищены</p>
         <p>По вопросам авторства или проблем с данными</p> 
         <p>обращаться на почту: aprel955@mail.ru</p>
+        <script src="scripts.js"></script>
     </footer>
 </body>
 </html>
