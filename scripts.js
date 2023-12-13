@@ -84,7 +84,7 @@ function searchUsers() {
 
 
 function redirectToHomePage() {
-    window.location.href = "MainMenu.html"; 
+    window.location.href = "index.html"; 
 }
 
 document.addEventListener("DOMContentLoaded", function () {
